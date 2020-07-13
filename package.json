@@ -4,7 +4,7 @@
   "description": "Notes for Data in JavaScript session. ***",
   "main": ".",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --reporter=nyan --bail"
+    "test": "node node_modules/mocha/bin/mocha --reporter=nyan --bail"
   },
   "repository": {
     "type": "git",
