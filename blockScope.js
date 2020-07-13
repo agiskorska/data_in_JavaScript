@@ -19,4 +19,4 @@ function telescope(){
     console.log(`d is ${d}.`);
 };
 
-telescope();
+// telescope();
