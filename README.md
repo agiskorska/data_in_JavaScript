@@ -6,7 +6,7 @@ Notes for Data in JavaScript session.
 - Numbers can be **integers** (whole) or **floats** (numbers with a decimal point in them).
 - Javascript has built in operators we can use on numeric data such as addition, multiplication, divisibility, modulus etc.
 - Whilst we are doing some mathematics we might create another type of numeric value called a **NaN** (Not a Number)
-- Any very large number (over 53<sup>2</sup> - 1) are considered to be a **bigint**.
+- Any very large number (over 2<sup>53</sup> - 1) are considered to be a **bigint**.
 ***
 ## Alpha-numeric
 Alpha-numeric data is a collection of characters that form words, a sentence, a paragraph etc. In JavaScript (and in wider programming) we call these **strings**.
