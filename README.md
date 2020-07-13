@@ -171,6 +171,13 @@ counter++;
 ```
 
 
+5. 
+- Fork and clone this repo
+- Install dependencies with `npm install`
+- Run the test suite with `npm test`
+- Make changes to `main.js` until all tests are passing
+
+
 
 
 
