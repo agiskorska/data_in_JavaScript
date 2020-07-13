@@ -1,3 +1,5 @@
+// How do each of these types of variable declarations behave with the if block?
+
 function telescope(){
     var a = "near";
     let b = "near";
