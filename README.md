@@ -2,7 +2,7 @@
 [Data in JavaScript](https://github.com/getfutureproof/fp_guides_wiki/wiki/Data-in-JavaScript)
 
 # Exercises
-*Try the first four sets exercises in your browser console (right click and choose 'inspect')*
+*Try the first four sets of exercises in your browser console (right click and choose 'inspect')*
 
 1. Create the following variables, thinking about the variable name, and the type of data you expect to be stored in it. Is it likely to change?:
     - Has someone had coffee today or not?
