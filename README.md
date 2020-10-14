@@ -16,7 +16,7 @@
 2. Experiment with accessing those pieces of information.
 
 3. Determine what type of data all of these are:
-```js
+```js 
 1
 
 “90”
