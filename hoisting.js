@@ -1,32 +1,42 @@
 // How does this behave with var, let and const?
 // What if we move the variable declaration to the top of the function?
+
 function shapely(){
-    console.log(`I am so ${status}.`)
+    const blah = 'in shape'
+    console.log(`I am so ${blah}.`) 
 
-    var status = 'in shape';
 
-    console.log(`I am so ${status}.`)
+    console.log(`I am so ${blah}.`)
 };
 
 
-// What about function declarations?
-function shapely(){
-    console.log(`I am so ${status}.`)
+shapely()
 
-    function status(){
-        return 'in shape';
-    }
 
-    console.log(`I am so ${status}.`)
-};
+// // What about function declarations?
+// function shapely(){
+//     console.log(`I am so ${blah()}.`)
+
+//     function blah(){
+//         return 'in shape';
+//     }
+
+//     console.log(`I am so ${blah()}.`)
+// };
+
 
 // What about variables that point to anonymous functions?
-function shapely(){
-    console.log(`I am so ${status}.`)
+// function shapely(){
+//     console.log(`I am so ${blah()}.`)
+    
+//     var blah = () => 'in shape';
+//     // var blah = function(){
+//     //     return 'in shape'
+//     // }
 
-    var status = () => 'in shape';
-
-    console.log(`I am so ${status}.`)
-};
+//     console.log(`I am so ${blah()}.`)
+// };
 
 
+
+// Use https://ui.dev/ to help visulalize execution contexts (supports ES5 only)
