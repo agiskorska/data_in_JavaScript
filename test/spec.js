@@ -25,11 +25,12 @@ describe('Adopt a Friend', () => {
 
     describe('takeMeHome', () => {
         const takeMeHome = app.__get__('takeMeHome');
-        const catLocation = app.__get__('catLocation');
-
+        const catStartingLocation = app.__get__('catLocation')
         it('accesses a variable of catLocation', () => {
             takeMeHome();
-            expect(catLocation).to.equal("Cornwall");
+            const catEndingLocation = app.__get__('catLocation');
+            expect(catEndingLocation).to.not.equal(catStartingLocation);
+            expect(catEndingLocation).to.equal("Cornwall")
         });
     })
 });
