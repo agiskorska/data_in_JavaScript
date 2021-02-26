@@ -1,10 +1,11 @@
 {
   "name": "fp_study_notes_data_in_javascript",
   "version": "1.0.0",
-  "description": "Notes for Data in JavaScript session. ***",
+  "description": "",
   "main": ".",
   "scripts": {
-    "test": "mocha --reporter=nyan"
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
