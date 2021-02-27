@@ -1,36 +1,33 @@
-const expect = require('chai').expect;
-const rewire = require ('rewire');
-
-const app = rewire('../main.js');
+const adoptionHelpers = require('../main');
 
 describe('Adopt a Friend', () => {
     describe('catName', () => {
-        const catName = app.__get__('catName');
+        const catName = adoptionHelpers.catName
+
         it('should not be undefined', () => {
-           expect(catName).to.not.be.undefined; 
+           expect(catName).toBeDefined(); 
         });
 
         it('should store a string', () => {
-            expect(catName).to.be.a('string');
+            expect(catName).toEqual(expect.any(String));
         });
 
         it('should be declared as "Zelda"', () => {
-            expect(catName).to.equal('Zelda');
+            expect(catName).toEqual('Zelda');
         });
 
-        it('should be reassignable', () => {
-            expect(function(){app.__get__('catName') = "Tiger Lily"}).to.not.throw(TypeError);
+        it('should not be able to be updated', () => {
+            expect(() => adoptionHelpers.rename("Bob")).toThrow(TypeError)
         });
     });
 
-    describe('takeMeHome', () => {
-        const takeMeHome = app.__get__('takeMeHome');
-        const catStartingLocation = app.__get__('catLocation')
-        it('accesses a variable of catLocation', () => {
-            takeMeHome();
-            const catEndingLocation = app.__get__('catLocation');
-            expect(catEndingLocation).to.not.equal(catStartingLocation);
-            expect(catEndingLocation).to.equal("Cornwall")
+    describe('takeMeHome', () => {        
+        it('updates the cat location', () => {
+            expect(() => adoptionHelpers.takeMeHome()).not.toThrow(TypeError)
+        })
+
+        it('returns the cat\'s new location', () => {
+            expect(adoptionHelpers.takeMeHome()).toEqual("Cornwall")
         });
     })
 });

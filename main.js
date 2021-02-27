@@ -1,12 +1,14 @@
-const catName;
-let catLocation = "London";
+let catName;
+const catLocation = "London";
 
 function takeMeHome(){
-    let catLocation = "Cornwall";
+    catLocation = "Cornwall";
 };
 
-// Helpers (please do not edit these functions)
 function rename(newName){
-    catName = newName
-    return catName
+    catName = newName;
 };
+
+module.exports = {
+    catName, catLocation, takeMeHome, rename
+}
