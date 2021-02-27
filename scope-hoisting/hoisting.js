@@ -2,15 +2,12 @@
 // What if we move the variable declaration to the top of the function?
 
 function shapely(){
-    const blah = 'in shape'
     console.log(`I am so ${blah}.`) 
 
+    var blah = 'in shape' // try with var, let and const
 
     console.log(`I am so ${blah}.`)
 };
-
-
-shapely()
 
 
 // // What about function declarations?
@@ -25,7 +22,7 @@ shapely()
 // };
 
 
-// What about variables that point to anonymous functions?
+// // What about variables that point to anonymous functions?
 // function shapely(){
 //     console.log(`I am so ${blah()}.`)
     
@@ -39,4 +36,4 @@ shapely()
 
 
 
-// Use https://ui.dev/ to help visulalize execution contexts (supports ES5 only)
+// Use https://ui.dev/javascript-visualizer/ to help visulalize execution contexts (supports ES5 only)
