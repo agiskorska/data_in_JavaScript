@@ -12,6 +12,8 @@ function telescope(){
         let b = "far";
         const c = "far";
         d = "far";
+        // // Pause with this debugger and investigate the Sources > Scope panel
+        // debugger;
     };
 
     console.log(`a is ${a}.`);
