@@ -1,8 +1,8 @@
-let catName;
-const catLocation = "London";
+const catName = "Zelda";
+let catLocation = "London";
 
 function takeMeHome(){
-    catLocation = "Cornwall";
+    return catLocation = "Cornwall";
 };
 
 function rename(newName){

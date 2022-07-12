@@ -1,8 +1,7 @@
-const adoptionHelpers = require('../main');
+const { catName, catLocation, takeMeHome, rename} = require('../main');
 
 describe('Adopt a Friend', () => {
     describe('catName', () => {
-        const catName = adoptionHelpers.catName
 
         it('should not be undefined', () => {
            expect(catName).toBeDefined(); 
@@ -17,17 +16,17 @@ describe('Adopt a Friend', () => {
         });
 
         it('should not be able to be updated', () => {
-            expect(() => adoptionHelpers.rename("Bob")).toThrow(TypeError)
+            expect(() => rename("Bob")).toThrow(TypeError)
         });
     });
 
     describe('takeMeHome', () => {        
         it('updates the cat location', () => {
-            expect(() => adoptionHelpers.takeMeHome()).not.toThrow(TypeError)
+            expect(() => takeMeHome()).not.toThrow(TypeError)
         })
 
         it('returns the cat\'s new location', () => {
-            expect(adoptionHelpers.takeMeHome()).toEqual("Cornwall")
+            expect(takeMeHome()).toEqual("Cornwall")
         });
     })
 });
